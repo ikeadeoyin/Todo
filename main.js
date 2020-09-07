@@ -35,7 +35,9 @@ function addItem(e){
     // add class
     completeButton.classList.add("complete");
     // addcontent
-    completeButton.innerHTML = '<img src="icons/check.png" alt="tick" width="20" height="20">';
+    // completeButton.innerHTML = '<img src="icons/check.png" alt="tick" width="20" height="20">';
+    // new button
+    completeButton.innerHTML = '<i class="far fa-check-square"></i>';
     // completeButton.textContent = "Done";
     // append to li
     listItem.appendChild(completeButton);
@@ -46,7 +48,9 @@ function addItem(e){
     deleteButton.classList.add("delete");
     // add content
     // deleteButton.textContent = "Del";
-    deleteButton.innerHTML = '<img src="icons/delete.png" alt="tick" width="20" height="20">';
+    // deleteButton.innerHTML = '<img src="icons/delete.png" alt="tick" width="20" height="20">';
+    // new button icon
+    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
     // apend to li
     listItem.appendChild(deleteButton);
     todoList.appendChild(listItem);
